@@ -1,0 +1,57 @@
+.social-icon-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon-content {
+  position: relative; /* Essential for absolute tooltip positioning */
+  display: flex;
+  align-items: center;
+}
+
+.social-icon-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Tooltip styling */
+.social-tooltip {
+  position: absolute;
+  left: 100%; /* Positioned right next to the icon */
+  margin-left: 12px;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Hover effects */
+.social-icon-content:hover .social-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.social-icon-content a:hover {
+  color: #fff;
+  background-color: var(--hover-bg);
+}
