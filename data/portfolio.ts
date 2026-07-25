@@ -187,7 +187,7 @@ export const projects: { index: string; heading: string; items: Project[] } = {
         "Zustand",
         "Axios",
       ],
-      liveUrl: "posvault.netlify.app", // ← replace
+      liveUrl: "https://posvault.netlify.app", // ← replace
       githubUrl: "https://github.com/Abdul-Basit-cmd/multi-tenant-pos-.git", // ← replace
       image: "/projects/pos.png",
     },
@@ -208,7 +208,7 @@ export const projects: { index: string; heading: string; items: Project[] } = {
       description:
         "Secure notes application with full authentication plus complete CRUD — create, read, update, and delete notes.",
       stack: ["React", "Node.js", "Express", "MongoDB", "Zustand", "Axios"],
-      liveUrl: "notewault.netlify.app",
+      liveUrl: "https://notewault.netlify.app",
       image: "/projects/note.png",
     },
     {
