@@ -18,28 +18,62 @@
   :root {
     color-scheme: dark;
   }
+
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    /* Firefox Scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(250, 250, 250, 0.1) transparent;
   }
+
   body {
     background: var(--color-background);
     color: var(--color-foreground);
   }
+
   ::selection {
     background: rgba(250, 250, 250, 0.15);
   }
+
   /* SplitText line mask */
   .split-line {
     overflow: hidden;
   }
-  /* Visible keyboard focus */
+
+  /* Refined Focus States for Accessibility */
+  :focus {
+    outline: none;
+  }
+
   :focus-visible {
     outline: 2px solid var(--color-foreground);
-    outline-offset: 3px;
+    outline-offset: 4px;
     border-radius: 2px;
   }
+
+  /* Specific focus for buttons inside magnetic wrappers */
+  a:focus-visible,
+  button:focus-visible {
+    outline-offset: 6px;
+  }
+}
+
+/* Webkit Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(250, 250, 250, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(250, 250, 250, 0.2);
 }
 
 @media (prefers-reduced-motion: reduce) {
