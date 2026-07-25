@@ -10,7 +10,7 @@ export const site = {
   title: "Abdul Basit — Full Stack Developer",
   description:
     "MERN stack developer who just wrapped a 4-month internship at Fossphorus LLC in Karachi. I build clean, quiet interfaces that ship end to end.",
-  url: "https://heybasit.com", // ← set after deploy
+  url: "https://heybasit.vercel.app", // ← set after deploy
   locale: "en_US",
   email: "hello@heybasit.com", // ← replace
   location: "Karachi, Pakistan",
@@ -175,7 +175,7 @@ export const projects: { index: string; heading: string; items: Project[] } = {
     {
       index: "01",
       category: "Point of Sale System",
-      title: "NexPOS",
+      title: "POS Vault",
       description:
         "Multi-tenant POS system where an admin creates stores and sends a secure email link to the store owner to set their own password — no public sign-up.",
       stack: [
@@ -187,9 +187,9 @@ export const projects: { index: string; heading: string; items: Project[] } = {
         "Zustand",
         "Axios",
       ],
-      liveUrl: "#", // ← replace
-      githubUrl: "https://github.com/", // ← replace
-      image: "/projects/nexpos.webp",
+      liveUrl: "posvault.netlify.app", // ← replace
+      githubUrl: "https://github.com/Abdul-Basit-cmd/multi-tenant-pos-.git", // ← replace
+      image: "/projects/pos.png",
     },
     {
       index: "02",
@@ -198,8 +198,8 @@ export const projects: { index: string; heading: string; items: Project[] } = {
       description:
         "Full-fledged authentication system with register, login, forgot password, OTP verification, and password reset flows.",
       stack: ["React", "Node.js", "Express", "MongoDB", "Zustand", "Axios"],
-      liveUrl: "#",
-      image: "/projects/mern-auth.webp",
+      liveUrl: "https://basit-mern-auth.netlify.app/",
+      image: "/projects/mern-auth.png",
     },
     {
       index: "03",
@@ -209,7 +209,7 @@ export const projects: { index: string; heading: string; items: Project[] } = {
         "Secure notes application with full authentication plus complete CRUD — create, read, update, and delete notes.",
       stack: ["React", "Node.js", "Express", "MongoDB", "Zustand", "Axios"],
       liveUrl: "#",
-      image: "/projects/notevault.webp",
+      image: "/projects/note.png",
     },
     {
       index: "04",
@@ -218,8 +218,8 @@ export const projects: { index: string; heading: string; items: Project[] } = {
       description:
         "Frontend-only e-commerce storefront built with React and Vite, styled with Tailwind CSS, state managed via Context API.",
       stack: ["React", "Vite", "Tailwind CSS", "Context API"],
-      liveUrl: "#",
-      image: "/projects/forever.webp",
+      liveUrl: "https://forever-ecommerce.netlify.app/",
+      image: "/projects/forever.png",
     },
   ],
 };
