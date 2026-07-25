@@ -208,7 +208,7 @@ export const projects: { index: string; heading: string; items: Project[] } = {
       description:
         "Secure notes application with full authentication plus complete CRUD — create, read, update, and delete notes.",
       stack: ["React", "Node.js", "Express", "MongoDB", "Zustand", "Axios"],
-      liveUrl: "#",
+      liveUrl: "notewault.netlify.app",
       image: "/projects/note.png",
     },
     {
